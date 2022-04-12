@@ -3,3 +3,6 @@ version: '3'
 
 includes:
   docs: .taskfiles/docs.yml
+  pre-commit: .taskfiles/pre-commit.yml
+  markdown: .taskfiles/markdown.yml
+  lint: .taskfiles/lint.yml
