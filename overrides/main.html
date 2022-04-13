@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block extrahead %}
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/extended.css' | url }}">
+  <link rel="stylesheet" href="{{ 'assets/stylesheets/custom.css' | url }}">
+{% endblock %}
+{% block announce %}
+    <a href="https://twitter.com/kashalls">
+        For updates, follow <strong>@kashalls</strong> on
+        <span class="twemoji twitter">
+            {% include ".icons/fontawesome/brands/twitter.svg" %}
+        </span>
+        <strong>Twitter</strong>
+      </a>
+{% endblock %}
+{% block content %}
+  {% include "partials/content.html" %}
+{% endblock %}
+{% block scripts %}
+  {{ super() }}
+{% endblock %}
