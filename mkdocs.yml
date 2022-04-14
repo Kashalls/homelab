@@ -17,22 +17,22 @@ theme:
     logo: logo
   language: en
   features:
+    - announce.dismiss
     - content.code.annotate
-    # - content.tabs.link
     - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.indexes
-    # - navigation.instant
+    - navigation.instant
     - navigation.sections
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.top
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    - toc.integrate
   palette:
     - scheme: default
       primary: indigo
@@ -57,10 +57,30 @@ extra:
       link: https://github.com/kashalls
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/kashalls
+  analytics:
+    provider: google
+    property: G-X4J8GWHBWZ
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target=_blank>feedback form</a>.
+
+
 
 # Plugins
 plugins:
   - search
+  - git-revision-date
   - minify:
       minify_html: true
 
@@ -76,8 +96,12 @@ nav:
   - Home: index.md
   - Cluster:
     - cluster/index.md
+    - Getting Started: cluster/getting-started/restoring-services.md
   - Hardware:
     - hardware/airgradient.md
+    - hardware/synology.md
+    - hardware/zigbee-cordinator.md
+    - hardware/codename-nezuko.md
   - Networking:
     - General: networking/general.md
     - DNS: networking/dns.md
